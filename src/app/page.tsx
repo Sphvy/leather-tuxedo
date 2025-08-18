@@ -1,103 +1,52 @@
 import Image from "next/image";
+import stenimg from "/public/images/sten.png";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div className="bg-[url(/images/sunset_yellow.jpg)] bg-cover bg-scroll w-screen h-screen">
+      <div className="max-w-screen max-h-fit rounded-b-4xl bg-gradient-to-r from-sky-orange-100 from-20% via-sky-orange-200 via-50% to-90% bg-repeat-x  flex justify-start">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          src={stenimg}
+          width={150}
+          height={75}
+          alt="Sten"
+          className="p-2"
+        ></Image>
+      </div>
+      <div className="p-16">
+        <div className="p-4 shadow-2xl text-center outline-2 max-w-1/3 outline-sky-orange-500  rounded-2xl bg-sky-orange-100">
+          <h1>Sten</h1>
+          <h2>Oskused & Tehnoloogiad:</h2>
+          <h3>Frontend Arendus:</h3>
+          <h4>
+            Next.js (põhitasemel), React (põhitasemel), Tailwind CSS
+            (põhitasemel), HTML, CSS, JavaScript (põhioskused)
+          </h4>
+          <br></br>
+          <h2>Linux:</h2>
+          <h4>
+            Põhilised käsurea oskused (navigeerimine, failihaldus, skriptimise
+            alused), Lihtsate serveriülesannete haldamine
+          </h4>
+          <br></br>
+          <h2>Kogemus</h2>
+          <h4>
+            Väike- ja keskmise suurusega frontend projektid (nt isiklikud
+            veebilehed, väikeettevõtete lehed), Lihtsate Next.js rakenduste
+            loomine ja haldamine, Tailwind CSS kasutamine disainis
+            kiirendamiseks
+          </h4>
+          <br></br>
+          <h2>Haridus</h2>
+          <h4>Tallinna Polütehnikum</h4>
+          <br></br>
+          <h3>
+            Mind iseloomustab: õpihimu, soov areneda tehnilistes oskustes,
+            töökus, oskus teha koostööd meeskonnas, väga hea inglise keel,
+            tähelepanelikkus detailidel koodis
+          </h3>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
   );
 }

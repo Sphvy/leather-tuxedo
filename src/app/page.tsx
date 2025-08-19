@@ -16,8 +16,8 @@ export default function Home() {
       <div className="p-16">
         <div className="p-4 shadow-2xl text-center outline-4 sm:w-1/2 outline-sky-green-500 rounded-2xl bg-sky-green-100 md:w-1/3">
           <h1>Sten</h1>
-          <h2>Oskused & Tehnoloogiad:</h2>
-          <h3>Frontend Arendus:</h3>
+          <h2>Oskused & tehnoloogiad:</h2>
+          <h3>Frontend arendus:</h3>
           <h4>
             Next.js (põhitasemel), React (põhitasemel), Tailwind CSS
             (põhitasemel), HTML, CSS, JavaScript (põhioskused)
@@ -26,13 +26,13 @@ export default function Home() {
           <h2>Linux:</h2>
           <h4>
             Põhilised käsurea oskused (navigeerimine, failihaldus, skriptimise
-            alused), Lihtsate serveriülesannete haldamine
+            alused), lihtsate serveriülesannete haldamine
           </h4>
           <br></br>
           <h2>Kogemus</h2>
           <h4>
             Väike- ja keskmise suurusega frontend projektid (nt isiklikud
-            veebilehed, väikeettevõtete lehed), Lihtsate Next.js rakenduste
+            veebilehed, väikeettevõtete lehed), lihtsate Next.js rakenduste
             loomine ja haldamine, Tailwind CSS kasutamine disainis
             kiirendamiseks
           </h4>

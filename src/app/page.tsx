@@ -3,8 +3,8 @@ import stenimg from "/public/images/sten.png";
 
 export default function Home() {
   return (
-    <div className="bg-[url(/images/sunset_yellow.jpg)] bg-cover bg-scroll w-screen h-screen">
-      <div className="max-w-screen max-h-fit rounded-b-4xl bg-gradient-to-r from-sky-orange-100 from-20% via-sky-orange-200 via-50% to-90% bg-repeat-x  flex justify-start">
+    <div className="bg-[url(/images/sunny_day.jpg)] bg-cover bg-scroll w-screen h-auto">
+      <div className="max-w-screen max-h-fit rounded-b-4xl bg-gradient-to-r from-sky-blue-100 from-10% to-50% bg-repeat-x  flex justify-start">
         <Image
           src={stenimg}
           width={150}
@@ -14,7 +14,7 @@ export default function Home() {
         ></Image>
       </div>
       <div className="p-16">
-        <div className="p-4 shadow-2xl text-center outline-2 max-w-1/3 outline-sky-orange-500  rounded-2xl bg-sky-orange-100">
+        <div className="p-4 shadow-2xl text-center outline-4 sm:w-1/2 outline-sky-green-500 rounded-2xl bg-sky-green-100 md:w-1/3">
           <h1>Sten</h1>
           <h2>Oskused & Tehnoloogiad:</h2>
           <h3>Frontend Arendus:</h3>
